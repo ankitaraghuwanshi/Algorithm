@@ -1,4 +1,5 @@
 ﻿using AlgorithmProblem;
+using AlgorithmProgram;
 using System;
 
 namespace AlgorithmProblem
@@ -11,6 +12,7 @@ namespace AlgorithmProblem
             //stringPermutation.Input();
             Console.WriteLine("1: For String Permutation");
             Console.WriteLine("2: For Bubble Sort");
+            Console.WriteLine("3: For insertion Sort");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -21,6 +23,11 @@ namespace AlgorithmProblem
                 case 2:
                     BubbleSort bubbleSort = new BubbleSort();
                     bubbleSort.BubbleSorting();
+                    Console.WriteLine();
+                    break;
+                case 3:
+                    InsertionSort insertionSort = new InsertionSort();
+                    insertionSort.Insert();
                     Console.WriteLine();
                     break;
                 default:
