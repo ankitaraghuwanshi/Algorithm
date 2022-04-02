@@ -13,8 +13,8 @@ namespace AlgorithmProblem
             Console.WriteLine("1: For String Permutation");
             Console.WriteLine("2: For Bubble Sort");
             Console.WriteLine("3: For insertion Sort");
-            Console.WriteLine("4: For prime number range"); 
-
+            Console.WriteLine("4: For prime number range");
+            Console.WriteLine("5: For Anagram");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -36,6 +36,10 @@ namespace AlgorithmProblem
                     PrimeNumber primeNumber = new PrimeNumber();
                     primeNumber.Primenumber();
                     Console.WriteLine();
+                    break;
+                case 5:
+                    Anagram anagram = new Anagram();
+                    anagram.Anagrams();
                     break;
                 default:
                     Console.WriteLine("press a valid number");
