@@ -13,6 +13,8 @@ namespace AlgorithmProblem
             Console.WriteLine("1: For String Permutation");
             Console.WriteLine("2: For Bubble Sort");
             Console.WriteLine("3: For insertion Sort");
+            Console.WriteLine("4: For prime number range"); 
+
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -28,6 +30,11 @@ namespace AlgorithmProblem
                 case 3:
                     InsertionSort insertionSort = new InsertionSort();
                     insertionSort.Insert();
+                    Console.WriteLine();
+                    break;
+                case 4:
+                    PrimeNumber primeNumber = new PrimeNumber();
+                    primeNumber.Primenumber();
                     Console.WriteLine();
                     break;
                 default:
